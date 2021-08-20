@@ -619,7 +619,20 @@
             padding-left: 3rem;
             padding-right: 3rem;
         }
+    
+        footer.section{
+        padding: 3.75rem 0;
+        }
+        footer .container{
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+        }
+        footer .logo{
+        font-size: 2.25rem;
+        }
     }
+   
 
     /* large devices: 1023 > */
     @media(min-width: 1023px){
@@ -690,3 +703,27 @@
         padding-right: 3rem;
     }
 }
+    /*Footer ajust*/
+    @media(min-width: 444px){
+        footer.section{
+            padding: 3.75rem 0;
+        }
+        footer .container{
+            align-items: center;
+        }
+        footer .logo{
+            font-size: 1.75rem;
+        }
+        #testimonials .container{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        #contact .container{
+            grid-auto-flow: column;
+            align-items: center;
+        }
+        #contact .text{
+            max-width: 25rem;
+        }
+    }
